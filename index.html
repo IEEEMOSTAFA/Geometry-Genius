@@ -41,7 +41,7 @@
                         </div>
                     </div>
                 </div>
-
+    
                   <!-- Rectangle : 02-->
                   <div>
                     <div class="card w-96 bg-base-100 shadow-xl">
@@ -50,12 +50,14 @@
                           <h2 class="card-title">Rectangle</h2>
                           <p class="text-center">Area (A) = w * l</p>
                           <div class="flex">
+                            <!-- rectangle length -->
                             <input type="text" id="" class="w-24 text-2xl p-2 rounded-sm bg-zinc-300" placeholder="length"> <span></span>
                             <span class="mr-4 ml-2">cm</span>
+                            <!-- rectangle  width  -->
                             <input type="text" id="" class="w-24 text-2xl p-2 rounded-sm bg-zinc-300" placeholder="width"> <span class="ml-2">cm</span>
                           </div>
                           <div class="card-actions justify-end">
-                            <button class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
                           </div>
                         </div>
                       </div>
@@ -106,6 +108,7 @@
     </main>
     <!--       javascript part          -->
     <script src="scripts/triangle_calculate.js"></script>
+    <script src="scripts/rectangle_area.js"></script>
 
 </body>
 
