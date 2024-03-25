@@ -111,15 +111,23 @@
                     </div>
                     
                 </div>
-                <!-- Triangle -->
+                <!-- Ellipse -->
                 <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                    <figure><img src="images/ellipse.png"
                             alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <h2 class="card-title text-2xl">Ellipse</h2>
+                        <p class="text-center">Area(A) : 3.1416 * a * b</p>
+                        <div class="flex">
+                            <input type="text" id="fist-a" class="w-24 text-2xl p-2 rounded-sm bg-zinc-300" placeholder="a">
+                            <span class="mr-4 ml-2">cm</span>
+                            <input type="text" id="second-b" class="w-24 text-2xl p-2 rounded-sm bg-zinc-300" placeholder="b"><span class="ml-2">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl">Area : <span id="area_ellipse">0</span><span> cm<sup>2</sup></span></p>
+                        </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -135,6 +143,7 @@
     <script src="scripts/rectangle_area.js"></script>
     <script src="scripts/parallelogram.js"></script>
     <script src="scripts/rhombus.js"></script>
+    <script src="scripts/ellipseArea.js"></script>
 
 </body>
 
