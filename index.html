@@ -111,6 +111,27 @@
                     </div>
                     
                 </div>
+                <!-- Pentagon -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/pentagon.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title text-2xl">Pentagon</h2>
+                      <p class="text-center">Area(A) :  0.5 * p * b</p>
+                      <!-- Pentagon P -->
+                      <div class="flex gap-5">
+                        <input type="text" name="" id="pentagon-perimeter" class="w-24 text-2xl p-2 rounded-sm bg-zinc-300" placeholder="Peri">
+                    <span class="mr-4 ml-2">cm</span>
+                     <!-- Pentagon b --> 
+                    <input type="text" id="pentagon-apothem" class="w-24 text-2xl p-2 rounded-sm bg-zinc-300" placeholder="Apo"><span class="ml-2">cm</span>
+                    </div>
+                    <div>
+                        <p class="text-2xl">Area :  <span id="pentagon-area">0</span> <span>cm<sup>2</sup></span> </p>
+                    </div>
+                      <div class="card-actions justify-end">
+                        <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
                 <!-- Ellipse -->
                 <div class="card w-96 bg-base-100 shadow-xl">
                     <figure><img src="images/ellipse.png"
@@ -144,6 +165,7 @@
     <script src="scripts/parallelogram.js"></script>
     <script src="scripts/rhombus.js"></script>
     <script src="scripts/ellipseArea.js"></script>
+    <script src="scripts/pentagon_Area.js"></script>
 
 </body>
 
